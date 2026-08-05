@@ -1,6 +1,6 @@
 "use strict";
 
-const SITE_VERSION = "2026.08.05.1807";
+const SITE_VERSION = "2026.08.05.1814";
 const SITE_VERSION_STORAGE_KEY = "provador-site-version";
 const SITE_VERSION_URL = "version.json";
 const SITE_UPDATE_CHECK_INTERVAL = 5 * 60 * 1000;
