@@ -14,24 +14,4 @@ Aplicação web minimalista para visualizar brincos em uma foto da orelha antes 
 
 As fotos e os ajustes são processados no próprio navegador. Nenhuma imagem da orelha é enviada para serviços externos e nenhuma API de inteligência artificial é utilizada.
 
-## Executar localmente
-
-Na pasta do projeto, execute:
-
-```bash
-python -m http.server 8080
-```
-
-Depois, acesse `http://localhost:8080`.
-
-## Publicação
-
-O projeto é estático e pode ser publicado diretamente na Vercel, Netlify, Firebase Hosting ou GitHub Pages.
-
-## Atualizações do site
-
-O arquivo `version.json` controla o aviso **Site atualizado**. Ao publicar uma nova versão, altere o valor de `version`. Quando o usuário clicar no aviso, o site limpa o cache disponível e recarrega os arquivos mais recentes sem apagar os preços salvos no navegador.
-
-## Direitos de imagem
-
-As imagens e os nomes comerciais dos brincos pertencem aos respectivos titulares. Confirme a autorização necessária antes de utilizar o catálogo comercialmente.
+© 2026 Miguel Rodrigues
