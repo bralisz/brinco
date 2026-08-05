@@ -1,665 +1,114 @@
 [
   {
-    "id": "baby-tiffany-rubi-2mm",
+    "id": "tiffany-rubi-2mm",
     "name": "Tiffany Rubi 2 mm",
     "src": "assets/earrings/real/tiffany-rubi-2mm.png",
     "thumb": "assets/earrings/real/tiffany-rubi-2mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Tiffany",
     "line": "System75 Baby",
     "code": "134",
     "reference": "7581-0107",
     "sizeMm": 2,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-bezel-cristal-2mm",
+    "id": "bezel-cristal-2mm",
     "name": "Bezel Cristal 2 mm",
     "src": "assets/earrings/real/bezel-cristal-2mm.png",
     "thumb": "assets/earrings/real/bezel-cristal-2mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Bezel",
     "line": "System75 Baby",
     "code": "124",
     "reference": "7581-0204",
     "sizeMm": 2,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-bezel-rosa-2mm",
+    "id": "bezel-rosa-2mm",
     "name": "Bezel Rosa 2 mm",
     "src": "assets/earrings/real/bezel-rosa-2mm.png",
     "thumb": "assets/earrings/real/bezel-rosa-2mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Bezel",
     "line": "System75 Baby",
     "code": "129",
     "reference": "7581-0210",
     "sizeMm": 2,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-bolinha-3mm",
+    "id": "bolinha-3mm",
     "name": "Bolinha 3 mm",
     "src": "assets/earrings/real/bolinha-3mm.png",
     "thumb": "assets/earrings/real/bolinha-3mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Bolinha",
     "line": "System75 Baby",
     "code": "123",
     "reference": "7581-0300",
     "sizeMm": 3,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-daisy-rosa-fucsia-3mm",
+    "id": "daisy-rosa-fucsia-3mm",
     "name": "Daisy Rosa Fúcsia 3 mm",
     "src": "assets/earrings/real/daisy-rosa-fucsia-3mm.png",
     "thumb": "assets/earrings/real/daisy-rosa-fucsia-3mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "130",
     "reference": "7581-6023",
     "sizeMm": 3,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-daisy-cristal-3mm",
+    "id": "daisy-cristal-3mm",
     "name": "Daisy Cristal 3 mm",
     "src": "assets/earrings/real/daisy-cristal-3mm.png",
     "thumb": "assets/earrings/real/daisy-cristal-3mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "126",
     "reference": "7581-6004",
     "sizeMm": 3,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-daisy-rubi-cristal-3mm",
+    "id": "daisy-rubi-cristal-3mm",
     "name": "Daisy Rubi Cristal 3 mm",
     "src": "assets/earrings/real/daisy-rubi-cristal-3mm.png",
     "thumb": "assets/earrings/real/daisy-rubi-cristal-3mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "125",
     "reference": "7581-6074",
     "sizeMm": 3,
     "verified": true,
-    "globalWhiteCutout": true
+    "globalWhiteCutout": false
   },
   {
-    "id": "baby-daisy-cristal-rosa-3mm",
+    "id": "daisy-cristal-rosa-3mm",
     "name": "Daisy Cristal Rosa 3 mm",
     "src": "assets/earrings/real/daisy-cristal-rosa-3mm.png",
     "thumb": "assets/earrings/real/daisy-cristal-rosa-3mm.png",
-    "audience": "infantil",
+    "audience": "todos",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "127",
     "reference": "7581-6410",
     "sizeMm": 3,
     "verified": true,
-    "globalWhiteCutout": true
-  },
-  {
-    "id": "baby-bezel-perola-2mm",
-    "name": "Bezel Pérola 2 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_fb3b033c033a4d9d9f7294f363c2f450~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_fb3b033c033a4d9d9f7294f363c2f450~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_fb3b033c033a4d9d9f7294f363c2f450~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_fb3b033c033a4d9d9f7294f363c2f450~mv2.png",
-    "crop": [
-      34,
-      132,
-      116,
-      126
-    ],
-    "audience": "infantil",
-    "type": "Bezel",
-    "line": "System75 Baby",
-    "code": "128",
-    "reference": "7581-0301",
-    "sizeMm": 2,
-    "verified": true
-  },
-  {
-    "id": "baby-tiffany-cristal-2mm",
-    "name": "Tiffany Cristal 2 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_fedc5b9bfc264760895c40d0e2af23ef~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_fedc5b9bfc264760895c40d0e2af23ef~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_fedc5b9bfc264760895c40d0e2af23ef~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_fedc5b9bfc264760895c40d0e2af23ef~mv2.png",
-    "crop": [
-      32,
-      128,
-      120,
-      132
-    ],
-    "audience": "infantil",
-    "type": "Tiffany",
-    "line": "System75 Baby",
-    "code": "133",
-    "reference": "7581-0104",
-    "sizeMm": 2,
-    "verified": true
-  },
-  {
-    "id": "baby-tiffany-rosa-2mm",
-    "name": "Tiffany Rosa 2 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_68de310cfec244758d7e07fe39ffe3c2~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_68de310cfec244758d7e07fe39ffe3c2~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_68de310cfec244758d7e07fe39ffe3c2~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_68de310cfec244758d7e07fe39ffe3c2~mv2.png",
-    "crop": [
-      32,
-      128,
-      120,
-      132
-    ],
-    "audience": "infantil",
-    "type": "Tiffany",
-    "line": "System75 Baby",
-    "code": "132",
-    "reference": "7581-0110",
-    "sizeMm": 2,
-    "verified": true
-  },
-  {
-    "id": "baby-tiffany-perola-2mm",
-    "name": "Tiffany Pérola 2 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_f2782c6f40e440658b4598f576991ffa~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2782c6f40e440658b4598f576991ffa~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_f2782c6f40e440658b4598f576991ffa~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2782c6f40e440658b4598f576991ffa~mv2.png",
-    "crop": [
-      32,
-      128,
-      120,
-      132
-    ],
-    "audience": "infantil",
-    "type": "Tiffany",
-    "line": "System75 Baby",
-    "code": "131",
-    "reference": "7581-1301",
-    "sizeMm": 2,
-    "verified": true
-  },
-  {
-    "id": "s75-zirconia-quadrada-5x5",
-    "name": "Zircônia Quadrada 5 × 5 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_f2bd7d64ec7946ce8e3cc327e48ff64f~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2bd7d64ec7946ce8e3cc327e48ff64f~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_f2bd7d64ec7946ce8e3cc327e48ff64f~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2bd7d64ec7946ce8e3cc327e48ff64f~mv2.png",
-    "crop": [
-      52,
-      112,
-      136,
-      145
-    ],
-    "audience": "adulto",
-    "type": "Zircônia",
-    "line": "System75",
-    "code": "25",
-    "reference": "7591-0400",
-    "sizeMm": 5,
-    "verified": true
-  },
-  {
-    "id": "s75-zirconia-quadrada-3x3",
-    "name": "Zircônia Quadrada 3 × 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_833263e2778948a7afd16eb8aeaed969~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_833263e2778948a7afd16eb8aeaed969~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_833263e2778948a7afd16eb8aeaed969~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_833263e2778948a7afd16eb8aeaed969~mv2.png",
-    "crop": [
-      52,
-      116,
-      134,
-      140
-    ],
-    "audience": "adulto",
-    "type": "Zircônia",
-    "line": "System75",
-    "code": "30",
-    "reference": "7511-0400",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-bezel-zirconia-2mm",
-    "name": "Bezel Zircônia 2 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_5f7a0f8f5f8a4b68b154d0ff55b6f096~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_5f7a0f8f5f8a4b68b154d0ff55b6f096~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_5f7a0f8f5f8a4b68b154d0ff55b6f096~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_5f7a0f8f5f8a4b68b154d0ff55b6f096~mv2.png",
-    "crop": [
-      54,
-      122,
-      126,
-      132
-    ],
-    "audience": "adulto",
-    "type": "Bezel",
-    "line": "System75",
-    "code": "24",
-    "reference": "7531-0204",
-    "sizeMm": 2,
-    "verified": true
-  },
-  {
-    "id": "s75-bola-3mm",
-    "name": "Bola 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_d3672b683fc9461e9038e4bb794dd908~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d3672b683fc9461e9038e4bb794dd908~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_d3672b683fc9461e9038e4bb794dd908~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d3672b683fc9461e9038e4bb794dd908~mv2.png",
-    "crop": [
-      55,
-      128,
-      120,
-      126
-    ],
-    "audience": "adulto",
-    "type": "Bolinha",
-    "line": "System75",
-    "code": "29",
-    "reference": "7531-0300",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-mini-daisy-cristal-3mm",
-    "name": "Mini Daisy Cristal 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_f2165be1edf04e3f90308706d5a0c684~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2165be1edf04e3f90308706d5a0c684~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_f2165be1edf04e3f90308706d5a0c684~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_f2165be1edf04e3f90308706d5a0c684~mv2.png",
-    "crop": [
-      51,
-      116,
-      140,
-      145
-    ],
-    "audience": "adulto",
-    "type": "Daisy",
-    "line": "System75",
-    "code": "27",
-    "reference": "7531-6004",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-mini-daisy-cristal-rosa-3mm",
-    "name": "Mini Daisy Cristal Rosa 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_842fbcbad7ae43228aed2c3ba5e62cbd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_842fbcbad7ae43228aed2c3ba5e62cbd~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_842fbcbad7ae43228aed2c3ba5e62cbd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_842fbcbad7ae43228aed2c3ba5e62cbd~mv2.png",
-    "crop": [
-      51,
-      116,
-      140,
-      145
-    ],
-    "audience": "adulto",
-    "type": "Daisy",
-    "line": "System75",
-    "code": "27",
-    "reference": "7531-6410",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-estrela-glitter-branca-6-5mm",
-    "name": "Estrela Glitter Branca 6,5 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_8643f3ca107147e381a9565cb9b03979~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_8643f3ca107147e381a9565cb9b03979~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_8643f3ca107147e381a9565cb9b03979~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_8643f3ca107147e381a9565cb9b03979~mv2.png",
-    "crop": [
-      29,
-      99,
-      166,
-      170
-    ],
-    "audience": "adulto",
-    "type": "Estrela",
-    "line": "System75",
-    "code": "26",
-    "reference": "7523-3544",
-    "sizeMm": 6.5,
-    "verified": true
-  },
-  {
-    "id": "s75-titanium-bola-4mm",
-    "name": "Titanium Bola 4 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_92162c9b8e4b4e30aa336d983423bdfc~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_92162c9b8e4b4e30aa336d983423bdfc~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_92162c9b8e4b4e30aa336d983423bdfc~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_92162c9b8e4b4e30aa336d983423bdfc~mv2.png",
-    "crop": [
-      52,
-      117,
-      138,
-      144
-    ],
-    "audience": "adulto",
-    "type": "Titânio",
-    "line": "System75",
-    "code": "20",
-    "reference": "7513-0300",
-    "sizeMm": 4,
-    "verified": true
-  },
-  {
-    "id": "s75-titanium-bezel-cristal-3mm",
-    "name": "Titanium Bezel Cristal 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_3d28e108ad934d80b9c3090a544a4a24~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_3d28e108ad934d80b9c3090a544a4a24~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_3d28e108ad934d80b9c3090a544a4a24~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_3d28e108ad934d80b9c3090a544a4a24~mv2.png",
-    "crop": [
-      52,
-      117,
-      138,
-      144
-    ],
-    "audience": "adulto",
-    "type": "Titânio",
-    "line": "System75",
-    "code": "21",
-    "reference": "7513-0204",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-zirconia-3mm-08",
-    "name": "Zircônia 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_1d6e5b0dcded48c8b8416cca835aac56~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_1d6e5b0dcded48c8b8416cca835aac56~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_1d6e5b0dcded48c8b8416cca835aac56~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_1d6e5b0dcded48c8b8416cca835aac56~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Zircônia",
-    "line": "System75",
-    "code": "08",
-    "reference": "7512-0100",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-longpost-zirconia-3mm",
-    "name": "Longpost Zircônia 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_a95e54db080f4684942756a94bac2ff7~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_a95e54db080f4684942756a94bac2ff7~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_a95e54db080f4684942756a94bac2ff7~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_a95e54db080f4684942756a94bac2ff7~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Longpost",
-    "line": "System75",
-    "code": "09",
-    "reference": "7541-0100",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-zirconia-3mm-07",
-    "name": "Zircônia 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_e4e817fe0e494b15a841593c13c816a7~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_e4e817fe0e494b15a841593c13c816a7~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_e4e817fe0e494b15a841593c13c816a7~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_e4e817fe0e494b15a841593c13c816a7~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Zircônia",
-    "line": "System75",
-    "code": "07",
-    "reference": "7511-0100",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-rubi-3mm",
-    "name": "Rubi 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_ece108f4e2ee4e138c4cb5363a229921~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_ece108f4e2ee4e138c4cb5363a229921~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_ece108f4e2ee4e138c4cb5363a229921~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_ece108f4e2ee4e138c4cb5363a229921~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Pedra",
-    "line": "System75",
-    "code": "14",
-    "reference": "7511-0107",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-esmeralda-3mm",
-    "name": "Esmeralda 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_2499968791cb4d4899d32bbf32ab016e~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_2499968791cb4d4899d32bbf32ab016e~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_2499968791cb4d4899d32bbf32ab016e~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_2499968791cb4d4899d32bbf32ab016e~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Pedra",
-    "line": "System75",
-    "code": "13",
-    "reference": "7511-0105",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-furta-cor-3mm",
-    "name": "Furta-Cor 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_d107e933f1b04732b99c6502ae4e4e82~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d107e933f1b04732b99c6502ae4e4e82~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_d107e933f1b04732b99c6502ae4e4e82~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d107e933f1b04732b99c6502ae4e4e82~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Pedra",
-    "line": "System75",
-    "code": "12",
-    "reference": "7511-0115",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-estrela-3mm",
-    "name": "Estrela 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_d86e80c02ebf44c7b698a8d737454433~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d86e80c02ebf44c7b698a8d737454433~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_d86e80c02ebf44c7b698a8d737454433~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_d86e80c02ebf44c7b698a8d737454433~mv2.png",
-    "crop": [
-      52,
-      116,
-      138,
-      145
-    ],
-    "audience": "adulto",
-    "type": "Estrela",
-    "line": "System75",
-    "code": "15",
-    "reference": "7531-0501",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-coracao-3mm",
-    "name": "Coração 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_ab2f6ab70ef04bfab37af0c11ffe90cd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_ab2f6ab70ef04bfab37af0c11ffe90cd~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_ab2f6ab70ef04bfab37af0c11ffe90cd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_ab2f6ab70ef04bfab37af0c11ffe90cd~mv2.png",
-    "crop": [
-      52,
-      116,
-      138,
-      145
-    ],
-    "audience": "adulto",
-    "type": "Coração",
-    "line": "System75",
-    "code": "16",
-    "reference": "7531-0502",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-coracao-glitter-rosa-7mm",
-    "name": "Coração Glitter Rosa 7 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_9fecce8fba514a1f9a706c5affac9125~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_9fecce8fba514a1f9a706c5affac9125~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_9fecce8fba514a1f9a706c5affac9125~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_9fecce8fba514a1f9a706c5affac9125~mv2.png",
-    "crop": [
-      42,
-      102,
-      158,
-      165
-    ],
-    "audience": "adulto",
-    "type": "Coração",
-    "line": "System75",
-    "code": "23",
-    "reference": "7523-3565",
-    "sizeMm": 7,
-    "verified": true
-  },
-  {
-    "id": "s75-bezel-zirconia-3mm-10",
-    "name": "Bezel Zircônia 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_96b09ae5707f45a1850a671d7c4bcf21~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_96b09ae5707f45a1850a671d7c4bcf21~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_96b09ae5707f45a1850a671d7c4bcf21~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_96b09ae5707f45a1850a671d7c4bcf21~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Bezel",
-    "line": "System75",
-    "code": "10",
-    "reference": "7512-0260",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-longpost-bola-3mm",
-    "name": "Longpost Bola 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_74c71954c9fc4374adf6fdd115d406bd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_74c71954c9fc4374adf6fdd115d406bd~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_74c71954c9fc4374adf6fdd115d406bd~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_74c71954c9fc4374adf6fdd115d406bd~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Longpost",
-    "line": "System75",
-    "code": "18",
-    "reference": "7561-0300",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-borboleta-rosa-8mm",
-    "name": "Borboleta Rosa 8 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_da39c99326b9487a8bae5343a6ca02be~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_da39c99326b9487a8bae5343a6ca02be~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_da39c99326b9487a8bae5343a6ca02be~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_da39c99326b9487a8bae5343a6ca02be~mv2.png",
-    "crop": [
-      50,
-      119,
-      125,
-      130
-    ],
-    "audience": "adulto",
-    "type": "Borboleta",
-    "line": "System75",
-    "code": "22",
-    "reference": "7523-3526",
-    "sizeMm": 8,
-    "verified": true
-  },
-  {
-    "id": "s75-bezel-zirconia-3mm-09",
-    "name": "Bezel Zircônia 3 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_e47736b50609465aaf8a9e786ca9ec4b~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_e47736b50609465aaf8a9e786ca9ec4b~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_e47736b50609465aaf8a9e786ca9ec4b~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_e47736b50609465aaf8a9e786ca9ec4b~mv2.png",
-    "crop": [
-      52,
-      120,
-      135,
-      138
-    ],
-    "audience": "adulto",
-    "type": "Bezel",
-    "line": "System75",
-    "code": "09",
-    "reference": "7511-0260",
-    "sizeMm": 3,
-    "verified": true
-  },
-  {
-    "id": "s75-barbell-4mm",
-    "name": "Barbell 4 mm",
-    "src": "https://static.wixstatic.com/media/935b8b_a9edce9104e34851abc2a440c216cc22~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_a9edce9104e34851abc2a440c216cc22~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_a9edce9104e34851abc2a440c216cc22~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_a9edce9104e34851abc2a440c216cc22~mv2.png",
-    "crop": [
-      52,
-      110,
-      140,
-      150
-    ],
-    "audience": "adulto",
-    "type": "Barbell",
-    "line": "System75",
-    "code": "49",
-    "reference": "7512-2300",
-    "sizeMm": 4,
-    "verified": true
-  },
-  {
-    "id": "s75-argola-12-7mm-dourada",
-    "name": "Argola 12,7 mm Dourada",
-    "src": "https://static.wixstatic.com/media/935b8b_eba784db076a48cdb5503e3854022662~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_eba784db076a48cdb5503e3854022662~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_eba784db076a48cdb5503e3854022662~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_eba784db076a48cdb5503e3854022662~mv2.png",
-    "crop": [
-      35,
-      108,
-      150,
-      165
-    ],
-    "audience": "adulto",
-    "type": "Argola",
-    "line": "System75",
-    "code": "01",
-    "reference": "7511-0921",
-    "sizeMm": 12.7,
-    "verified": true
-  },
-  {
-    "id": "s75-argola-12-7mm-prateada",
-    "name": "Argola 12,7 mm Prateada",
-    "src": "https://static.wixstatic.com/media/935b8b_98a3bc7849e94987a76a5873f4ce55c4~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_98a3bc7849e94987a76a5873f4ce55c4~mv2.png",
-    "thumb": "https://static.wixstatic.com/media/935b8b_98a3bc7849e94987a76a5873f4ce55c4~mv2.png/v1/fill/w_344%2Ch_344%2Cq_90%2Cenc_avif%2Cquality_auto/935b8b_98a3bc7849e94987a76a5873f4ce55c4~mv2.png",
-    "crop": [
-      35,
-      108,
-      150,
-      165
-    ],
-    "audience": "adulto",
-    "type": "Argola",
-    "line": "System75",
-    "code": "02",
-    "reference": "7512-0921",
-    "sizeMm": 12.7,
-    "verified": true
+    "globalWhiteCutout": false
   }
 ]
