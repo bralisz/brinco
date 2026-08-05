@@ -1,46 +1,37 @@
 # Provador Virtual de Brincos
 
-Aplicação web estática e responsiva para experimentar brincos sobre uma foto da orelha.
+Aplicação web minimalista para visualizar brincos em uma foto da orelha antes da aplicação. O usuário envia ou tira uma foto, marca a posição do furo, escolhe um modelo do catálogo e ajusta o brinco diretamente sobre a imagem.
 
-## Catálogo
+## O que o site oferece
 
-- 37 modelos reais e verificados das linhas **Studex System75 Baby** e **Studex System75**.
-- Nomes oficiais, tamanhos, códigos e referências do fabricante.
-- Os oito modelos da foto enviada aparecem primeiro no catálogo.
-- Modelos inventados, emojis e SVGs genéricos foram removidos.
+- Upload de foto ou captura pela câmera.
+- Marcação do local do furo.
+- Catálogo com oito modelos reais: Tiffany Rubi, Bezel Cristal, Bezel Rosa, Bolinha 3 mm e quatro variações Daisy.
+- Controles para mover, redimensionar, girar, espelhar e ajustar a opacidade do brinco.
+- Campo de preço para cada modelo, salvo no navegador.
+- Download da montagem final em PNG ou JPG.
+- Funcionamento responsivo em celular e computador.
 
-## Funcionalidades
+As fotos e os ajustes são processados no próprio navegador. Nenhuma imagem da orelha é enviada para serviços externos e nenhuma API de inteligência artificial é utilizada.
 
-- Upload por arquivo ou câmera.
-- Marcação do furo, arraste, tamanho, rotação, opacidade e espelhamento.
-- Preço individual por brinco, salvo no `localStorage`.
-- Exportação PNG ou JPG.
-- Ajuste visual local de luz, sombra e contato, sem OpenAI ou API de IA.
+## Executar localmente
 
-## Execução local
+Na pasta do projeto, execute:
 
 ```bash
 python -m http.server 8080
 ```
 
-Acesse `http://localhost:8080`. É necessária conexão com a internet para carregar as fotografias oficiais dos modelos que não fazem parte dos oito recortes locais.
+Depois, acesse `http://localhost:8080`.
 
 ## Publicação
 
-A pasta pode ser publicada diretamente na Vercel, Netlify, Firebase Hosting ou GitHub Pages.
+O projeto é estático e pode ser publicado diretamente na Vercel, Netlify, Firebase Hosting ou GitHub Pages.
+
+## Atualizações do site
+
+O arquivo `version.json` controla o aviso **Site atualizado**. Ao publicar uma nova versão, altere o valor de `version`. Quando o usuário clicar no aviso, o site limpa o cache disponível e recarrega os arquivos mais recentes sem apagar os preços salvos no navegador.
 
 ## Direitos de imagem
 
-As fotografias e nomenclaturas oficiais pertencem aos respectivos titulares. Confirme a autorização do fabricante antes do uso comercial.
-
-
-## Miniaturas em alta qualidade
-
-- As imagens do catálogo são carregadas em resolução maior quando a fonte permite.
-- O navegador recorta apenas a vista frontal do brinco e remove o fundo claro.
-- As peças locais usam PNG transparente de 1024 × 1024.
-- Fotos que mostram haste e tarraxa não são usadas diretamente como miniatura do catálogo.
-
-## Aviso de atualização
-
-O arquivo `version.json` controla o aviso discreto **Site atualizado**. Ao publicar uma nova versão, altere o valor de `version`. O botão remove caches acessíveis, desregistra service workers antigos e abre `cache-refresh.html`, que no Vercel recebe o cabeçalho `Clear-Site-Data: "cache"` antes de recarregar o site. Os preços salvos no `localStorage` não são apagados.
+As imagens e os nomes comerciais dos brincos pertencem aos respectivos titulares. Confirme a autorização necessária antes de utilizar o catálogo comercialmente.
