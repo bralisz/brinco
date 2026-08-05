@@ -32,3 +32,11 @@ A pasta pode ser publicada diretamente na Vercel, Netlify, Firebase Hosting ou G
 ## Direitos de imagem
 
 As fotografias e nomenclaturas oficiais pertencem aos respectivos titulares. Confirme a autorização do fabricante antes do uso comercial.
+
+
+## Miniaturas em alta qualidade
+
+- As imagens do catálogo são carregadas em resolução maior quando a fonte permite.
+- O navegador recorta apenas a vista frontal do brinco e remove o fundo claro.
+- As peças locais usam PNG transparente de 1024 × 1024.
+- Fotos que mostram haste e tarraxa não são usadas diretamente como miniatura do catálogo.

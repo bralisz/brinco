@@ -2,3 +2,5 @@ Catálogo e referências de produto: Studex Brasil, System75 e System75 Baby.
 Os oito recortes iniciais foram produzidos a partir da fotografia fornecida pelo usuário.
 As demais fotografias são carregadas do CDN oficial da Studex Brasil.
 Confirme licenças e autorização antes de uso comercial.
+
+Atualização visual: miniaturas frontais, recorte transparente e carregamento em alta resolução quando disponível.

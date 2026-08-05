@@ -6,6 +6,9 @@ const MAX_CUSTOM_SIDE = 1200;
 const NUDGE_PERCENT = 0.005;
 const LOCAL_ANALYSIS_SIZE = 72;
 const LOCAL_LAYER_MAX_SIDE = 1400;
+const CATALOG_SOURCE_BASE_SIZE = 344;
+const CATALOG_CUTOUT_SIDE = 1024;
+const TRANSPARENT_PIXEL = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 const PRICE_STORAGE_KEY = "provador-virtual-brincos-prices-v2";
 const MAX_PRICE = 999999.99;
 const priceFormatter = new Intl.NumberFormat("pt-BR", {
@@ -18,105 +21,113 @@ const catalog = [
     "id": "baby-tiffany-rubi-2mm",
     "name": "Tiffany Rubi 2 mm",
     "src": "assets/earrings/real/tiffany-rubi-2mm.png",
-    "thumb": "assets/earrings/real/tiffany-rubi-2mm-thumb.jpg",
+    "thumb": "assets/earrings/real/tiffany-rubi-2mm.png",
     "audience": "infantil",
     "type": "Tiffany",
     "line": "System75 Baby",
     "code": "134",
     "reference": "7581-0107",
     "sizeMm": 2,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-bezel-cristal-2mm",
     "name": "Bezel Cristal 2 mm",
     "src": "assets/earrings/real/bezel-cristal-2mm.png",
-    "thumb": "assets/earrings/real/bezel-cristal-2mm-thumb.jpg",
+    "thumb": "assets/earrings/real/bezel-cristal-2mm.png",
     "audience": "infantil",
     "type": "Bezel",
     "line": "System75 Baby",
     "code": "124",
     "reference": "7581-0204",
     "sizeMm": 2,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-bezel-rosa-2mm",
     "name": "Bezel Rosa 2 mm",
     "src": "assets/earrings/real/bezel-rosa-2mm.png",
-    "thumb": "assets/earrings/real/bezel-rosa-2mm-thumb.jpg",
+    "thumb": "assets/earrings/real/bezel-rosa-2mm.png",
     "audience": "infantil",
     "type": "Bezel",
     "line": "System75 Baby",
     "code": "129",
     "reference": "7581-0210",
     "sizeMm": 2,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-bolinha-3mm",
     "name": "Bolinha 3 mm",
     "src": "assets/earrings/real/bolinha-3mm.png",
-    "thumb": "assets/earrings/real/bolinha-3mm-thumb.jpg",
+    "thumb": "assets/earrings/real/bolinha-3mm.png",
     "audience": "infantil",
     "type": "Bolinha",
     "line": "System75 Baby",
     "code": "123",
     "reference": "7581-0300",
     "sizeMm": 3,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-daisy-rosa-fucsia-3mm",
     "name": "Daisy Rosa Fúcsia 3 mm",
     "src": "assets/earrings/real/daisy-rosa-fucsia-3mm.png",
-    "thumb": "assets/earrings/real/daisy-rosa-fucsia-3mm-thumb.jpg",
+    "thumb": "assets/earrings/real/daisy-rosa-fucsia-3mm.png",
     "audience": "infantil",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "130",
     "reference": "7581-6023",
     "sizeMm": 3,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-daisy-cristal-3mm",
     "name": "Daisy Cristal 3 mm",
     "src": "assets/earrings/real/daisy-cristal-3mm.png",
-    "thumb": "assets/earrings/real/daisy-cristal-3mm-thumb.jpg",
+    "thumb": "assets/earrings/real/daisy-cristal-3mm.png",
     "audience": "infantil",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "126",
     "reference": "7581-6004",
     "sizeMm": 3,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-daisy-rubi-cristal-3mm",
     "name": "Daisy Rubi Cristal 3 mm",
     "src": "assets/earrings/real/daisy-rubi-cristal-3mm.png",
-    "thumb": "assets/earrings/real/daisy-rubi-cristal-3mm-thumb.jpg",
+    "thumb": "assets/earrings/real/daisy-rubi-cristal-3mm.png",
     "audience": "infantil",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "125",
     "reference": "7581-6074",
     "sizeMm": 3,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-daisy-cristal-rosa-3mm",
     "name": "Daisy Cristal Rosa 3 mm",
     "src": "assets/earrings/real/daisy-cristal-rosa-3mm.png",
-    "thumb": "assets/earrings/real/daisy-cristal-rosa-3mm-thumb.jpg",
+    "thumb": "assets/earrings/real/daisy-cristal-rosa-3mm.png",
     "audience": "infantil",
     "type": "Daisy",
     "line": "System75 Baby",
     "code": "127",
     "reference": "7581-6410",
     "sizeMm": 3,
-    "verified": true
+    "verified": true,
+    "globalWhiteCutout": true
   },
   {
     "id": "baby-bezel-perola-2mm",
@@ -812,6 +823,51 @@ function getCatalogItem(itemId) {
   return catalog.find((item) => item.id === itemId) || null;
 }
 
+
+function getHighResolutionCatalogUrl(src) {
+  if (!src || !src.includes("static.wixstatic.com")) return src;
+  return src
+    .replace(/w_344%2Ch_344/gi, "w_1200%2Ch_1200")
+    .replace(/q_90/gi, "q_100");
+}
+
+async function loadCatalogSource(item) {
+  const highResolutionSrc = getHighResolutionCatalogUrl(item.src);
+  try {
+    return await loadImage(highResolutionSrc, { crossOrigin: "anonymous" });
+  } catch (error) {
+    if (highResolutionSrc !== item.src) {
+      return loadImage(item.src, { crossOrigin: "anonymous" });
+    }
+    throw error;
+  }
+}
+
+function renderCatalogPreview(target, item) {
+  const token = `${item.id}-${Date.now()}-${Math.random()}`;
+  target.dataset.previewToken = token;
+  target.classList.add("is-loading");
+  target.src = (item.crop || item.globalWhiteCutout) ? TRANSPARENT_PIXEL : (item.thumb || item.src);
+
+  if (!item.crop && !item.globalWhiteCutout) {
+    target.classList.remove("is-loading");
+    return;
+  }
+
+  loadCatalogEarring(item)
+    .then((image) => {
+      if (target.dataset.previewToken !== token) return;
+      target.src = image.src;
+      target.classList.remove("is-loading");
+    })
+    .catch((error) => {
+      console.warn(`Não foi possível preparar a miniatura de ${item.name}.`, error);
+      if (target.dataset.previewToken !== token) return;
+      target.src = item.thumb || item.src;
+      target.classList.remove("is-loading");
+    });
+}
+
 function createCatalogButton(item) {
   const card = document.createElement("article");
   card.className = "catalog-card";
@@ -824,9 +880,10 @@ function createCatalogButton(item) {
   select.dataset.id = item.id;
 
   const img = document.createElement("img");
-  img.src = item.thumb || item.src;
+  img.src = TRANSPARENT_PIXEL;
   img.alt = "";
   img.loading = "lazy";
+  renderCatalogPreview(img, item);
 
   const name = document.createElement("span");
   name.className = "catalog-name";
@@ -943,8 +1000,8 @@ function updateSelectedPriceSummary() {
   dom.selectedPriceValue.classList.toggle("is-empty", !Number.isFinite(price));
   if (item) {
     dom.selectedModelName.textContent = item.name;
-    dom.selectedModelImage.src = item.thumb || item.src;
     dom.selectedModelImage.alt = item.name;
+    renderCatalogPreview(dom.selectedModelImage, item);
   }
 }
 
@@ -955,9 +1012,10 @@ function renderPriceEditor() {
     row.className = "price-editor-row";
 
     const preview = document.createElement("img");
-    preview.src = item.thumb || item.src;
+    preview.src = TRANSPARENT_PIXEL;
     preview.alt = "";
     preview.loading = "lazy";
+    renderCatalogPreview(preview, item);
 
     const info = document.createElement("span");
     info.className = "price-editor-info";
@@ -1200,6 +1258,33 @@ function removeWhiteProductBackground(canvas) {
   ctx.putImageData(imageData, 0, 0);
 }
 
+function removeNeutralLightBackgroundGlobal(canvas) {
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const { data } = imageData;
+
+  for (let index = 0; index < data.length; index += 4) {
+    const r = data[index];
+    const g = data[index + 1];
+    const b = data[index + 2];
+    const alpha = data[index + 3];
+    const max = Math.max(r, g, b);
+    const min = Math.min(r, g, b);
+
+    if (alpha < 8) {
+      data[index + 3] = 0;
+      continue;
+    }
+
+    if (min > 168 && max - min < 58) {
+      const distance = Math.hypot(255 - r, 255 - g, 255 - b);
+      data[index + 3] = Math.min(alpha, clampByte((distance - 7) * 6.5));
+    }
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+}
+
 function trimTransparentCanvas(sourceCanvas, padding = 18) {
   const ctx = sourceCanvas.getContext("2d", { willReadFrequently: true });
   const { data } = ctx.getImageData(0, 0, sourceCanvas.width, sourceCanvas.height);
@@ -1232,22 +1317,46 @@ function trimTransparentCanvas(sourceCanvas, padding = 18) {
 }
 
 async function loadCatalogEarring(item) {
-  if (!item.crop) return loadImage(item.src);
+  if (!item.crop && !item.globalWhiteCutout) return loadImage(item.src);
   if (catalogCutoutCache.has(item.id)) return catalogCutoutCache.get(item.id);
 
   const promise = (async () => {
-    const source = await loadImage(item.src, { crossOrigin: "anonymous" });
-    const [x, y, width, height] = item.crop;
-    const scale = 4;
+    if (item.globalWhiteCutout && !item.crop) {
+      const source = await loadImage(item.src);
+      const maxSide = Math.max(source.naturalWidth, source.naturalHeight);
+      const renderScale = Math.min(3, CATALOG_CUTOUT_SIDE / maxSide);
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.max(1, Math.round(source.naturalWidth * renderScale));
+      canvas.height = Math.max(1, Math.round(source.naturalHeight * renderScale));
+      const ctx = canvas.getContext("2d");
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = "high";
+      ctx.drawImage(source, 0, 0, canvas.width, canvas.height);
+      removeNeutralLightBackgroundGlobal(canvas);
+      const trimmed = trimTransparentCanvas(canvas, 34);
+      return loadImage(trimmed.toDataURL("image/png"));
+    }
+
+    const source = await loadCatalogSource(item);
+    const [baseX, baseY, baseWidth, baseHeight] = item.crop;
+    const baseSize = item.cropBaseSize || CATALOG_SOURCE_BASE_SIZE;
+    const scaleX = source.naturalWidth / baseSize;
+    const scaleY = source.naturalHeight / baseSize;
+    const sourceX = baseX * scaleX;
+    const sourceY = baseY * scaleY;
+    const sourceWidth = baseWidth * scaleX;
+    const sourceHeight = baseHeight * scaleY;
+    const renderScale = Math.min(4, CATALOG_CUTOUT_SIDE / Math.max(sourceWidth, sourceHeight));
+
     const canvas = document.createElement("canvas");
-    canvas.width = Math.max(1, Math.round(width * scale));
-    canvas.height = Math.max(1, Math.round(height * scale));
+    canvas.width = Math.max(1, Math.round(sourceWidth * renderScale));
+    canvas.height = Math.max(1, Math.round(sourceHeight * renderScale));
     const ctx = canvas.getContext("2d");
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = "high";
-    ctx.drawImage(source, x, y, width, height, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(source, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, canvas.width, canvas.height);
     removeWhiteProductBackground(canvas);
-    const trimmed = trimTransparentCanvas(canvas);
+    const trimmed = trimTransparentCanvas(canvas, 30);
     return loadImage(trimmed.toDataURL("image/png"));
   })();
 
