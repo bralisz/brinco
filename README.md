@@ -40,3 +40,7 @@ As fotografias e nomenclaturas oficiais pertencem aos respectivos titulares. Con
 - O navegador recorta apenas a vista frontal do brinco e remove o fundo claro.
 - As peças locais usam PNG transparente de 1024 × 1024.
 - Fotos que mostram haste e tarraxa não são usadas diretamente como miniatura do catálogo.
+
+## Aviso de atualização
+
+O arquivo `version.json` controla o aviso discreto **Site atualizado**. Ao publicar uma nova versão, altere o valor de `version`. O botão remove caches acessíveis, desregistra service workers antigos e abre `cache-refresh.html`, que no Vercel recebe o cabeçalho `Clear-Site-Data: "cache"` antes de recarregar o site. Os preços salvos no `localStorage` não são apagados.

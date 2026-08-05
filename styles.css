@@ -22,3 +22,11 @@ main,footer{width:min(1240px,calc(100% - 40px));margin-inline:auto}.hero{padding
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
 
 .catalog-select img,.selected-model-card>img,.price-editor-row>img{transition:opacity .18s ease;image-rendering:auto}.catalog-select img.is-loading,.selected-model-card>img.is-loading,.price-editor-row>img.is-loading{opacity:.18}
+
+/* Aviso discreto de nova versão */
+.site-update-button{position:fixed;top:max(18px,env(safe-area-inset-top));right:max(18px,env(safe-area-inset-right));z-index:1200;min-height:40px;padding:0 16px;border:1px solid #d4d4d0;border-radius:999px;background:#e7e7e4;color:#555550;box-shadow:0 8px 24px rgba(17,17,17,.10);cursor:pointer;font-size:12px;font-weight:760;letter-spacing:-.01em;transition:background var(--ease),color var(--ease),transform var(--ease),opacity var(--ease)}
+.site-update-button:hover{background:#dcdcd8;color:#222220;transform:translateY(-1px)}
+.site-update-button:active{transform:none}
+.site-update-button:disabled{cursor:wait;opacity:.68;transform:none}
+.site-update-button.is-visible{display:inline-flex!important;align-items:center;justify-content:center}
+@media (max-width:640px){.site-update-button{top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));min-height:38px;padding-inline:14px}}

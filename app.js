@@ -1,5 +1,9 @@
 "use strict";
 
+const SITE_VERSION = "2026.08.05.1807";
+const SITE_VERSION_STORAGE_KEY = "provador-site-version";
+const SITE_VERSION_URL = "version.json";
+const SITE_UPDATE_CHECK_INTERVAL = 5 * 60 * 1000;
 const MAX_PHOTO_BYTES = 20 * 1024 * 1024;
 const MAX_CANVAS_SIDE = 3000;
 const MAX_CUSTOM_SIDE = 1200;
@@ -179,6 +183,7 @@ const dom = {
   downloadLabel: document.querySelector("#downloadLabel"),
   downloadStatus: document.querySelector("#downloadStatus"),
   toast: document.querySelector("#toast"),
+  siteUpdateButton: document.querySelector("#siteUpdateButton"),
   stepItems: [...document.querySelectorAll(".step")],
   nudgeButtons: [...document.querySelectorAll("[data-nudge]")]
 };
@@ -212,6 +217,8 @@ const state = {
   customCount: 0,
   toastTimer: 0,
   renderBusy: false,
+  availableSiteVersion: SITE_VERSION,
+  siteUpdateBusy: false,
   localAnalysisCache: null,
   localRenderCache: null,
   prices: loadStoredPrices(),
@@ -1638,6 +1645,120 @@ function openCatalogForChange() {
   dom.catalogPanel.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+
+function normalizeSiteVersion(value) {
+  return String(value || "").trim().replace(/[^0-9A-Za-z._-]/g, "").slice(0, 80);
+}
+
+function getStoredSiteVersion() {
+  try {
+    return normalizeSiteVersion(window.localStorage.getItem(SITE_VERSION_STORAGE_KEY));
+  } catch {
+    return "";
+  }
+}
+
+function storeSiteVersion(version) {
+  try {
+    window.localStorage.setItem(SITE_VERSION_STORAGE_KEY, normalizeSiteVersion(version) || SITE_VERSION);
+  } catch {
+    // O aviso continua funcionando na sessão mesmo quando o armazenamento está bloqueado.
+  }
+}
+
+function setSiteUpdateButtonVisible(visible) {
+  if (!dom.siteUpdateButton) return;
+  dom.siteUpdateButton.hidden = !visible;
+  dom.siteUpdateButton.classList.toggle("is-visible", visible);
+}
+
+async function fetchLatestSiteVersion() {
+  const url = new URL(SITE_VERSION_URL, window.location.href);
+  url.searchParams.set("check", String(Date.now()));
+  const response = await fetch(url, {
+    cache: "no-store",
+    credentials: "same-origin",
+    headers: { Accept: "application/json" }
+  });
+  if (!response.ok) throw new Error(`Falha ao consultar a versão do site (${response.status}).`);
+  const payload = await response.json();
+  return normalizeSiteVersion(payload.version) || SITE_VERSION;
+}
+
+async function checkForSiteUpdate({ initialize = false } = {}) {
+  let latestVersion = SITE_VERSION;
+  try {
+    latestVersion = await fetchLatestSiteVersion();
+  } catch (error) {
+    console.warn("Não foi possível verificar a versão mais recente do site.", error);
+  }
+
+  state.availableSiteVersion = latestVersion;
+  const storedVersion = getStoredSiteVersion();
+
+  if (!storedVersion) {
+    storeSiteVersion(latestVersion);
+    setSiteUpdateButtonVisible(false);
+    return;
+  }
+
+  const hasUpdate = storedVersion !== latestVersion;
+  setSiteUpdateButtonVisible(hasUpdate);
+
+  if (initialize && !hasUpdate) {
+    const currentUrl = new URL(window.location.href);
+    if (currentUrl.searchParams.has("_siteUpdated")) {
+      currentUrl.searchParams.delete("_siteUpdated");
+      window.history.replaceState(null, "", `${currentUrl.pathname}${currentUrl.search}${currentUrl.hash}`);
+    }
+  }
+}
+
+async function clearSiteCachesAndReload() {
+  if (state.siteUpdateBusy) return;
+  state.siteUpdateBusy = true;
+
+  if (dom.siteUpdateButton) {
+    dom.siteUpdateButton.disabled = true;
+    dom.siteUpdateButton.textContent = "Atualizando...";
+  }
+
+  storeSiteVersion(state.availableSiteVersion || SITE_VERSION);
+
+  try {
+    if ("caches" in window) {
+      const cacheNames = await window.caches.keys();
+      await Promise.all(cacheNames.map((cacheName) => window.caches.delete(cacheName)));
+    }
+
+    if ("serviceWorker" in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map((registration) => registration.unregister()));
+    }
+  } catch (error) {
+    console.warn("Nem todos os caches puderam ser removidos pelo navegador.", error);
+  }
+
+  const returnUrl = new URL(window.location.href);
+  returnUrl.searchParams.delete("_siteUpdated");
+  const refreshUrl = new URL("cache-refresh.html", window.location.href);
+  refreshUrl.searchParams.set("return", `${returnUrl.pathname}${returnUrl.search}${returnUrl.hash}`);
+  refreshUrl.searchParams.set("version", state.availableSiteVersion || SITE_VERSION);
+  refreshUrl.searchParams.set("time", String(Date.now()));
+  window.location.replace(refreshUrl.href);
+}
+
+function setupSiteUpdateNotification() {
+  if (!dom.siteUpdateButton) return;
+  dom.siteUpdateButton.addEventListener("click", clearSiteCachesAndReload);
+  checkForSiteUpdate({ initialize: true });
+
+  window.setInterval(() => checkForSiteUpdate(), SITE_UPDATE_CHECK_INTERVAL);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") checkForSiteUpdate();
+  });
+}
+
 function attachEvents() {
   dom.choosePhotoBtn.addEventListener("click", (event) => { event.stopPropagation(); dom.photoInput.click(); });
   dom.cameraPhotoBtn.addEventListener("click", (event) => { event.stopPropagation(); dom.cameraInput.click(); });
@@ -1755,5 +1876,6 @@ function attachEvents() {
 
 populateTypeFilter();
 renderCatalog();
+setupSiteUpdateNotification();
 attachEvents();
 updateRangeOutputs();
