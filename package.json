@@ -1,0 +1,12 @@
+{
+  "name": "provador-virtual-brincos",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Provador virtual de brincos com catálogo infantil/adulto, preços locais e acabamento visual no navegador.",
+  "scripts": {
+    "check": "node --check app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

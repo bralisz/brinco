@@ -1,0 +1,15 @@
+{
+  "name": "Provador Virtual de Brincos",
+  "short_name": "Provador",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f5f3",
+  "theme_color": "#f5f5f3",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
