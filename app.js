@@ -1,6 +1,6 @@
 "use strict";
 
-const SITE_VERSION = "2026.08.07.1127";
+const SITE_VERSION = "2026.08.07.1140";
 const SITE_VERSION_STORAGE_KEY = "provador-site-version";
 const SITE_VERSION_URL = "version.json";
 const SITE_UPDATE_CHECK_INTERVAL = 5 * 60 * 1000;
@@ -256,6 +256,76 @@ const catalog = [
     "code": "7512-0603",
     "reference": "7512-0603",
     "sizeMm": 6,
+    "verified": true,
+    "globalWhiteCutout": false
+  },
+  {
+    "id": "borboleta-ab-cristal-rosa-ouro-branco-14k",
+    "name": "Borboleta AB Cristal e Rosa Claro em Ouro Branco 14K",
+    "src": "assets/earrings/real/borboleta-ab-cristal-rosa-ouro-branco-14k.png",
+    "thumb": "assets/earrings/real/borboleta-ab-cristal-rosa-ouro-branco-14k.png",
+    "audience": "todos",
+    "type": "Borboleta",
+    "line": "System75",
+    "code": "7514-5514-23",
+    "reference": "7514-5514-23",
+    "sizeMm": 7,
+    "verified": true,
+    "globalWhiteCutout": false
+  },
+  {
+    "id": "estrela-glitter-cristal-dourada",
+    "name": "Estrela Glitter Cristal Dourada",
+    "src": "assets/earrings/real/estrela-glitter-cristal-dourada.png",
+    "thumb": "assets/earrings/real/estrela-glitter-cristal-dourada.png",
+    "audience": "todos",
+    "type": "Estrela",
+    "line": "System75",
+    "code": "7523-3544-23",
+    "reference": "7523-3544-23",
+    "sizeMm": 6,
+    "verified": true,
+    "globalWhiteCutout": false
+  },
+  {
+    "id": "cristal-shimmer-escarlate-dourado",
+    "name": "Cristal Shimmer Escarlate Dourado",
+    "src": "assets/earrings/real/cristal-shimmer-escarlate-dourado.png",
+    "thumb": "assets/earrings/real/cristal-shimmer-escarlate-dourado.png",
+    "audience": "todos",
+    "type": "Cristal",
+    "line": "System75",
+    "code": "7511-1507-23",
+    "reference": "7511-1507-23",
+    "sizeMm": 4,
+    "verified": true,
+    "globalWhiteCutout": false
+  },
+  {
+    "id": "cristal-agua-marinha-3mm-dourado",
+    "name": "Cristal Água-marinha 3 mm Dourado",
+    "src": "assets/earrings/real/cristal-agua-marinha-3mm-dourado.png",
+    "thumb": "assets/earrings/real/cristal-agua-marinha-3mm-dourado.png",
+    "audience": "todos",
+    "type": "Cristal",
+    "line": "System75",
+    "code": "7511-0103-23",
+    "reference": "7511-0103-23",
+    "sizeMm": 3,
+    "verified": true,
+    "globalWhiteCutout": false
+  },
+  {
+    "id": "cristal-safira-setembro-3mm-dourado",
+    "name": "Cristal Safira de Setembro 3 mm Dourado",
+    "src": "assets/earrings/real/cristal-safira-setembro-3mm-dourado.png",
+    "thumb": "assets/earrings/real/cristal-safira-setembro-3mm-dourado.png",
+    "audience": "todos",
+    "type": "Cristal",
+    "line": "System75",
+    "code": "7511-0109-23",
+    "reference": "7511-0109-23",
+    "sizeMm": 3,
     "verified": true,
     "globalWhiteCutout": false
   }
